@@ -28,4 +28,5 @@ d.findElement(By.cssSelector("input[placeholder ='Name']")).sendKeys("test");
         //regular expression "//button[contains(@class,'submit')]"
         d.findElement(By.xpath("//button[contains(@class,'submit')]")).click();
         Thread.sleep(1000);
+        d.quit();
     }}
