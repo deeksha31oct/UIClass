@@ -5,7 +5,7 @@ import java.util.HashMap;
 public class CountforInterview {
     public static void main(String[]args)
     {
-        String str = "IcanDOthateasilyneedmoreconcentration";
+        String str = "IcanDOthateasilyneedmoreconcentrationgoodtry";
         HashMap<Character , Integer> hs= new HashMap<>();
         for(char ar : str.toCharArray())
         {
