@@ -11,7 +11,7 @@ import java.time.Duration;
 import java.util.Arrays;
 import java.util.List;
 
-public class LoginPractice
+public class ExplicitWait
 {
     public static void main(String[] args) throws InterruptedException {
         ChromeDriver c = new ChromeDriver();

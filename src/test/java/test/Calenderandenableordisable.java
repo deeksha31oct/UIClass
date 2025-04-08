@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 
-public class Calender {
+public class Calenderandenableordisable {
     public static void main (String[]args) throws InterruptedException {
         ChromeDriver r = new ChromeDriver();
         r.get("https://rahulshettyacademy.com/dropdownsPractise/");
