@@ -16,6 +16,8 @@ public class Statusbrokenlink {
     public static void main(String[]args) throws IOException {
         ChromeDriver  d = new ChromeDriver();
         d.get("https://rahulshettyacademy.com/AutomationPractice/");
+        SoftAssert s = new SoftAssert();
+
         List<WebElement> links = d.findElements(By.cssSelector("li.gf-li a"));
       for (WebElement link:links)
         {
@@ -25,14 +27,15 @@ public class Statusbrokenlink {
             con.connect();
              int respcode = con.getResponseCode();
              System.out.println(respcode);
-             //Assert.assertTrue(respcode<400,"The link with text" + link.getText()+ "is broken with code" + respcode);
-             if(respcode>400)
+            s.assertTrue(respcode<400,"The link with text" + link.getText()+ "is broken with code" + respcode);
+          /*   if(respcode>400)
              {
                  System.out.println("The link with text" + link.getText()+ "is broken with code" + respcode);
                  Assert.assertTrue(false);
-             }
+             }*/
 
 
         }
+      s.assertAll();
     }
 }
