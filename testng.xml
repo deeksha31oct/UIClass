@@ -2,7 +2,10 @@
 <suite name="MySuite">
     <test name="MyTest">
         <classes>
-            <class name="Testngtest"/><!-- Replace with your test class -->
+            <class name="Testngtest"/>
+            <class name="test.A3"/>
+            <class name="test.Dropdown"/>
+
         </classes>
     </test>
 </suite>

@@ -29,13 +29,11 @@ WebElement columndriver = footerd.findElement(By.xpath("//table/tbody/tr/td[1]/u
             Set<String> ab = d.getWindowHandles();
             Iterator<String> it = ab.iterator();
 
-            while (it.hasNext())
-            {
+            while (it.hasNext()) {
                 d.switchTo().window(it.next());
                 System.out.println(d.getTitle());
+                System.out.println(d.getTitle());
             }
-
-
         }
     }
 
