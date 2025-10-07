@@ -21,5 +21,6 @@ public class Filterworking
       List<WebElement> filter =   vegi.stream().filter(vegis->vegis.getText().contains("Rice"))
                 .collect(Collectors.toList());
         Assert.assertEquals(vegi.size(),filter.size());
+        //enter
     }
 }
