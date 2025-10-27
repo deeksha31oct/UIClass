@@ -4,16 +4,21 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+import java.time.Duration;
 import java.util.List;
 
 public class Scrolling {
     public static void main(String[]args) throws InterruptedException {
         ChromeDriver d = new ChromeDriver();
+        WebDriverWait wait = new WebDriverWait(d , Duration.ofSeconds(5));
         d.get("https://rahulshettyacademy.com/AutomationPractice/");
+        d.manage().window().maximize();
         JavascriptExecutor js = (JavascriptExecutor) d;
        js.executeScript("window.scrollBy(0,500)");
+
        Thread.sleep(3000);
        js.executeScript("document.querySelector('.tableFixHead').scrollTop=5000");
       List<WebElement> val= d.findElements(By.cssSelector(".tableFixHead td:nth-child(4)"));
