@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class fabnacoo_serise {
     public static void main(String[]args)
     {
-        int a = 10;
+        int a = 20;
         ArrayList<Integer>q = new ArrayList<>();
         q.add(0);
         q.add(1);
